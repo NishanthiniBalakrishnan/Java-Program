@@ -9,14 +9,17 @@ public class Solution {
     public static void main(String[] args) {
     Scanner sc=new Scanner (System.in);
     int num=sc.nextInt();
-        int mean=0;
+        float mean=0.0f;
         int sum=0;
     int arr[]=new int[num];
     for(int i=0; i<num;i++){
         arr[i]=sc.nextInt();
-        sum=sum+arr[i];
-        mean=sum/num;
     }
+        for(int i=0;i<num;i++){
+            sum=sum+arr[i];
+       
+        }
+         mean=(float)sum/num;
     System.out.printf("Array Mean Value is %.2f",(float)mean);
     
     
