@@ -1,0 +1,66 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int r1=sc.nextInt();
+    int c1=sc.nextInt();
+    int a[][]=new int [r1][c1];
+    int b[][]=new int [r1][c1];
+    int c[][]=new int [r1][c1];
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+            a[i][j]=sc.nextInt();
+            
+        }
+    }
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+           System.out.print(a[i][j] + " ");
+            
+        }
+        System.out.println();
+    }
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+            b[i][j]=sc.nextInt();
+            
+        }
+    }
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+           System.out.print(b[i][j] + " ");
+            
+        }
+        System.out.println();
+    }
+	for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+            c[i][j]=a[i][j]+b[i][j];
+            
+        }
+    }
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<r1;j++){
+           System.out.print(c[i][j] + " ");
+            
+        }
+        System.out.println();
+    }	
+		
+		
+		
+		
+		
+		
+		
+	}
+}
