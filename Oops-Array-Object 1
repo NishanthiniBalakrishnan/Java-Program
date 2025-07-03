@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+class Theater {
+    String movieName;
+    String timing;
+     String language;
+    Theater(String movieName, String timing, String language) {
+        this.movieName = movieName;
+        this.timing = timing;
+        this.language = language;
+    }
+    void display(int showNum) {
+        System.out.println("Show " + showNum);
+        System.out.println("Movie Name:" + movieName);
+        System.out.println("Movie Timing:" + timing);
+        System.out.println("Movie Language:" + language);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+            int showCount = Integer.parseInt(sc.nextLine());
+        if (showCount < 1 || showCount > 4) {
+                  System.out.println("Invalid number of shows. Show limit is up to 4.");
+            return;
+        }
+        Theater[] shows = new Theater[showCount];
+        for (int i = 0; i < showCount; i++) {
+            String movieName = sc.nextLine();
+          String timing = sc.nextLine();
+           String language = sc.nextLine();
+            shows[i] = new Theater(movieName, timing, language);
+        }
+        System.out.println("Hello Viewers,Here Your Details!!!!");
+        for (int i = 0; i < showCount; i++) {
+            shows[i].display(i + 1);
+        }
+    }
+}
