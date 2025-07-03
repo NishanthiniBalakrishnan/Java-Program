@@ -1,0 +1,71 @@
+import java.io.*;
+2
+import java.util.*;
+3
+import java.text.*;
+4
+import java.math.*;
+5
+import java.util.regex.*;
+6
+​
+7
+ class person {
+8
+     String name;
+9
+     int age;
+10
+     person(String name,int age){
+11
+     this.name=name;
+12
+     this.age=age;
+13
+     }
+14
+     void display()
+15
+    {
+16
+       System.out.println("Welcome User!!!Here you Information\nYou details are,");
+17
+             System.out.println("My name is "+name);
+18
+        System.out.println("My age is "+age);
+19
+    }
+20
+    }
+21
+​
+22
+ public class Main{   
+23
+    public static void main(String[] args) {
+24
+        Scanner sc=new Scanner (System.in);
+25
+       
+26
+        String name=sc.nextLine();
+27
+         int age=sc.nextInt();
+28
+         if(age<35){
+29
+        person obj=new person(name,age);
+30
+        obj.display();
+31
+         }
+32
+         else{
+33
+              System.out.println("Dear User,Kindly Enter the valid Input...");
+34
+        }
+35
+    }
+36
+}
